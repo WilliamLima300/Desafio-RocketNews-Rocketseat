@@ -1,0 +1,136 @@
+
+/* Variaveis de cor para aplicação */
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+/* Zerar margin e padding da pagina */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+/* Adicionar configurações do body */
+body{
+    width: 100vw;
+    height:100vh;
+    font-family: 'League Spartan','Work Sans', sans-serif;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+/* Configurar imagem a direita "homem no notebook" */
+.imagem{
+    width:50%;
+    height: 100%;
+    float: right;
+    background: url('../assets/read_news.jpg');
+    background-color: var(--form-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* Configurações da section com as informações */
+
+.info{
+    width:50%;
+    height: 100%;
+    float: left;    
+}
+
+/* Configurações do header e logo */
+.info header{
+    width: 100%;
+    height: 30%;
+    
+}
+
+.info header img{
+    max-width: 30%;
+    max-height: 80px;
+    margin: 50px 0 0 25px;
+    
+}
+
+/* configurações dos textos */
+
+.texto{
+    width:80%;
+    margin-left: 25px;
+    color:var(--text-color);
+}
+.texto h1,h3,p{
+    margin: 10px 0;
+}
+.texto h1{
+    color:var(--title-color);
+}
+
+/* Configurações do input */
+
+.input{
+    width:110%;
+    margin-top: 50px;
+    margin-left: 25px;
+    color:var(--text-color);
+    
+}
+
+.input form{
+    width:100%;
+    z-index:2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--text-color);
+    background-color: var(--form-color);
+    box-shadow: 16px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.input form input{
+    width: 100%;
+    padding: 20px 8px;
+    border:0;
+    border-left: 5px solid var(--title-color);
+    outline: none;
+    
+}
+
+.input form button{
+    margin-left: 0;
+    padding: 14px 8px;
+    border:0;
+    background-color: var(--bg-button-color);
+    color: var(--text-color);
+}
+
+.input form button:hover{
+    cursor:pointer;
+}
+
+/* Configurações do link mais noticias */
+.link {
+    width: 100%;
+    height:60px;
+    color:var(--bg-button-color);
+    margin:50px 0 0 25px;
+}
+
+.link a{
+    width:30%;
+    height: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.link a svg:hover{
+  transform: translateX(0.25rem);;
+}
